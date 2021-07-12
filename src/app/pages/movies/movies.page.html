@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>My Movie Search</ion-title>
+    <ion-title>Menu de pesquisa</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,12 +9,13 @@
   <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchChanged()"></ion-searchbar>
 
   <ion-item>
-    <ion-label>Select Searchtype</ion-label>
+    <ion-label>Filtro de Pesquisa</ion-label>
     <ion-select [(ngModel)]="type" (ionChange)="searchChanged()">
-      <ion-select-option value="">All</ion-select-option>
-      <ion-select-option value="movie">Movie</ion-select-option>
-      <ion-select-option value="series">Series</ion-select-option>
-      <ion-select-option value="episode">Episode</ion-select-option>
+      <ion-select-option value="">Todos</ion-select-option>
+      <ion-select-option value="movie">Filmes</ion-select-option>
+      <ion-select-option value="series">Séries</ion-select-option>
+      <ion-select-option value="episode">Episodios</ion-select-option>
+      <ion-select-option value="game">Jogos</ion-select-option>
     </ion-select>
   </ion-item>
 
