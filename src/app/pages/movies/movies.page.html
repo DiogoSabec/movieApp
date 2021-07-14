@@ -1,11 +1,12 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Menu de pesquisa</ion-title>
+    <ion-title>Menu principal</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-button routerLink="/login"><ion-icon name="log-in-outline"></ion-icon> Login</ion-button>
+  
   <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchChanged()"></ion-searchbar>
 
   <ion-item>
